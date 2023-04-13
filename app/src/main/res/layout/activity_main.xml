@@ -26,13 +26,34 @@
         android:id="@+id/fonction"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:hint="Nom : " />
+        android:hint="Fonction : " />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/age"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:hint="Nom : " />
+        android:hint="Age : " />
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="SAVE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="save"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="GET"
+            android:layout_marginLeft="5dp"
+            android:layout_width="0dp"
+            android:onClick="get"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
